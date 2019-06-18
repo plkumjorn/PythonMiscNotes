@@ -2,11 +2,11 @@
 Virtual environment is used to maintain python libraries for a particular project without affecting system-wide libraries. It also promotes reproducible research as other researchers can create the same environment to run your codes successfully (e.g., after cloning your repository from github).
 
 ## Installations
-1. Install virtualenv via pip
+1. Install virtualenv via pip.
         
         pip install virtualenv
           
-2. Test your installation
+2. Test your installation.
 	
 		virtualenv --version
 
@@ -24,7 +24,7 @@ Virtual environment is used to maintain python libraries for a particular projec
 
 		source venv/Scripts/activate
 
-	You can notice the environment name appearing before the terminal prompt
+	You can notice the environment name appearing before the terminal prompt.
 
 		(venv) xxxxx $ 
 
@@ -64,11 +64,11 @@ Virtual environment is used to maintain python libraries for a particular projec
 
 ## Jupyter notebooks under the virtual environment
 
-1. From inside the environment install ipykernel using pip.
+1. From inside the environment, install ipykernel using pip.
 
 		pip install ipykernel
 
-2. Install a new kernel
+2. Install a new kernel.
 
 		ipython kernel install --user --name=venv
 
