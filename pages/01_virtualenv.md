@@ -21,8 +21,15 @@ Virtual environment is used to maintain python libraries for a particular projec
 		virtualenv -p /usr/bin/python2.7 venv
 
 2. To begin using the virtual environment,
+    - For Windows,
 
-		source venv/Scripts/activate
+			source venv/Scripts/activate
+
+	- For MacOS, Linux (bash)
+
+			source venv/bin/activate
+
+	- If you use csh or fish, use `activate.csh` or `activate.fish` instead of `activate`. Otherwise, it will show an error message such as `Badly placed ()'s.`
 
 	You can notice the environment name appearing before the terminal prompt.
 
