@@ -50,12 +50,12 @@ NLTK is a basic but useful python library for processing natural language texts.
 
 	If we use only `dist.most_common()` without specifying `k`, it will list all the words and their counts (in the decreasing order).
 
-4. Merge two FreqDist
+4. Merge two FreqDists
 		
 		def merge_freqdist(fd1, fd2):
-	    for (w, freq) in tqdm(fd2.most_common()):
-	        fd1[w] = fd1.get(w, 0) + freq
-	    return fd1
+		    for (w, freq) in tqdm(fd2.most_common()):
+		        fd1[w] = fd1.get(w, 0) + freq
+		    return fd1
 
 ## WordNet
 will be done.
