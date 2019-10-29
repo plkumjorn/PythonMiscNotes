@@ -15,12 +15,15 @@
 
 		screen -ls
 		>> There is a screen on:
-        >> 		31327.SNLI_full_training        (29/10/19 21:40:00)     (Detached)
+        >> 		<screen_id>.SNLI_full_training        (29/10/19 21:40:00)     (Detached)
 		>> 1 Socket in /run/screen/S-pl1515.
 3. Reattach to a screen
 
 		screen -r <screen_id>
 
+4. If you cannot reattach because the screen status is already *(Attached)*, add the `-d` option to detach together with the `-r` to reattach.
+
+		screen -r -d <screen_id>
 ## Multiple windows in a screen session
 
 See [here](https://linuxize.com/post/how-to-use-linux-screen/#working-with-linux-screen-windows)
