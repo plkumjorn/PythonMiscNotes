@@ -28,7 +28,7 @@ NLTK is a basic but useful python library for processing natural language texts.
 ## Word count using FreqDist
 1. Initialize the FreqDist object using a list of (tokenized) words.
 
-		dist = nltk.FreqDist(['hello','world','!','this','is','a','sentence'])
+		dist = nltk.FreqDist(['hello','world','!','this','is','a','hello','sentence'])
 
 	or using word tokenizer.
 
@@ -41,7 +41,7 @@ NLTK is a basic but useful python library for processing natural language texts.
 2. Find the frequency of a particular word
 
 		>>> dist['hello']
-		1
+		2
 
 3. Find top-k most common words
 		
@@ -50,7 +50,17 @@ NLTK is a basic but useful python library for processing natural language texts.
 
 	If we use only `dist.most_common()` without specifying `k`, it will list all the words and their counts (in the decreasing order).
 
-4. Merge two FreqDists
+4. Get the total number of words
+
+        >>> dist.N()
+        8
+
+   Get the total number of **distinct** words
+
+        >>> dist.B()
+        7
+        
+5. Merge two FreqDists
 		
 		def merge_freqdist(fd1, fd2):
 		    for (w, freq) in tqdm(fd2.most_common()):
