@@ -24,6 +24,10 @@
 4. If you cannot reattach because the screen status is already *(Attached)*, add the `-d` option to detach together with the `-r` to reattach.
 
 		screen -r -d <screen_id>
+
+## Scrolling in a screen
+To scroll up and down in a screen, press `Ctrl+a` and then `Esc`. Then you can use arrow keys to scroll. You can press `Esc` again to return to the previous mode.
+
 ## Multiple windows in a screen session
 
 See [here](https://linuxize.com/post/how-to-use-linux-screen/#working-with-linux-screen-windows)
