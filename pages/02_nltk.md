@@ -24,6 +24,11 @@ NLTK is a basic but useful python library for processing natural language texts.
 		>>> nltk.tokenize.sent_tokenize(text)
 		['So amazing!', 'It turns out to be a lot better than we expected.']
 
+## Stop words
+To get a set of English stop words,
+
+		from nltk.corpus import stopwords
+		stop_words_set = set(stopwords.words('english'))
 
 ## Word count using FreqDist
 1. Initialize the FreqDist object using a list of (tokenized) words.
