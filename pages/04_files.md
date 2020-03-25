@@ -1,10 +1,10 @@
 # Read & Write Files
 
-1. [General text files](general-text-files)
-2. [JSON files](json-files)
-3. [CSV files](csv-files)
-4. [PDF files (Write only)](pdf-files-write-only)
-5. [Pickle files](pickle-files)
+1. [General text files](#general-text-files)
+2. [JSON files](#json-files)
+3. [CSV files](#csv-files)
+4. [PDF files (Write only)](#pdf-files-write-only)
+5. [Pickle files](#pickle-files)
 
 ## General text files
 - Open a file using the `with` statement. It creates a scope which will close the opened file automatically after it finishes every command under the scope.
